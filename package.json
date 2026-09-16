@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.5.0",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  },
+  "scripts": {
+    "agent": "tsx src/index.ts",
+    "test": "playwright test",
+    "test:agent": "playwright test tests/agent --project=chromium",
+    "report": "playwright show-report"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "openai": "^7.10.0"
+  },
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "type": "module"
+}
