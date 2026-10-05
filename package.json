@@ -9,6 +9,7 @@
     "agent": "tsx src/index.ts",
     "test": "playwright test",
     "test:agent": "playwright test tests/agent --project=chromium",
+    "test:chrome": "playwright test --project=chromium",
     "report": "playwright show-report"
   },
   "dependencies": {
